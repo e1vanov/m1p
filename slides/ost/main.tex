@@ -1,0 +1,41 @@
+\documentclass{beamer}
+
+\usepackage{wasysym}
+\usepackage[center]{caption}
+
+\input{preambule}
+
+\title[OST. Фонтанные коды]{Использование идей фонтанного кодирования 
+при передаче малого числа битовых пакетов}
+\author[Иванов Е.Р.]{Иванов Егор Романович, 317 группа \\ 
+Научный руководитель: к.ф.-м.н. Гуров Сергей Исаевич}
+\date{\today}
+\institute{ММП ВМК МГУ}
+
+\titlegraphic{\includegraphics[scale=0.12]{img/msu.eps}}
+\usetheme{Madrid}
+
+\begin{document}
+
+\begin{frame}{One-slide Talk}
+
+    \begin{tabular}{cl}  
+         \begin{tabular}{c}
+           \includegraphics[width=0.35\linewidth]{img/lt_process.jpg}
+           \end{tabular}
+           & \begin{tabular}{l}
+             \parbox{0.53\linewidth}{%  change the parbox width as appropiate
+             Задача передачи битовых пакетов по каналу связи:
+             \begin{itemize}
+                 \item код \textit{систематический}
+                 \item модель канала -- \textit{<<очень хороший>>} BEC
+                 \item при одних и тех же параметрах высылается \textit{малое} число пакетов
+             \end{itemize}
+             \textbf{Требуется:} используя идеи фонтанного кодирования, сделать канал \textit{идеальным}.
+             }
+    \end{tabular}  \\
+    \end{tabular}
+
+\end{frame}
+
+\end{document}
